@@ -12,7 +12,9 @@ class BlogItem extends Component {
       <div>
         <Image src={item.image} width={300} height={52} alt={item.alt}/>
         <h3>
-          <TextBox text={item.title} />
+          <TextBox>
+            {item.title}
+          </TextBox>
         </h3>
       </div>
     )
